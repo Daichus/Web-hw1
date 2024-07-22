@@ -22,172 +22,21 @@
     body{
       background: #f8f9fa;
     }
-    .banner{
-      font-family: "LXGW WenKai Mono TC", monospace;
-      position: relative;
-    }
-    .navigator{
-      background: #99000F;
-      color: white;
-      height: 40px;
-      width:100%;
-      display: flex;
+    .container-fluid:after{
 
     }
-    .navigator a{
-      font-weight: bolder;
-      margin-left: 45px;
-      height: 100%;
-      padding: 0 7px 0 7px;
-      display: flex;
-      align-items: center;
-      transition: background-color 0.3s ease-in-out, font-size 0.3s ease-in-out;
-    }
-    .navigator a:hover{
-      background-color: indianred;
-      cursor: pointer;
-      font-size: 18px;
+    .container-fluid img{
+       height: 300px;
+      object-fit: cover;
     }
 
-    <!-- -->
-    .content{
-      padding-bottom: 45px;
-      width:100%; height:100vh;
-      display: flex;
-    }
-
-    .sideBar{
-      box-sizing: border-box;
-      width: 25%;
-      position: relative;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      overflow: scroll;
-    }
-
-    .card{
-      width: 98%;
-      > img {
-        transition: opacity 2s ease;
-      }
-    }
-
-    .card img:hover{
-      opacity: 0.25;
-    }
-
-    .table
-    {
-      box-sizing: border-box;
-      width: 50%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .table > div{
-      margin-top: 45px;
+    .crou-img{
+      height: 400px;
+      object-fit: cover;
     }
 
     .course_img img{
       border-radius: 50%;
-
-    }
-
-    table {
-      margin: 20px;
-      height: 250px;
-    }
-
-    h1,
-    h2,
-    form,
-    table {
-      text-align: center;
-    }
-
-    table,
-    th,
-    td {
-      border: 1px solid black;
-      border-collapse: collapse;
-      padding: 3px;
-    }
-
-
-    #title:after{
-      content: "";
-      margin-top: 10px;
-      display: block;
-      height: 1px;
-      background: linear-gradient(to right, transparent, grey, transparent);
-    }
-
-    td .teacher {
-      display: block;
-      color: blue;
-      font-size: smaller;
-    }
-
-    .teacher::after {
-      content: ' 老師';
-    }
-    .teacher_card_panel img {
-      max-width: 240px;
-    }
-
-
-    <!-- -->
-    #sideBarR:before{
-      content: "課程介紹";
-      width: 20%;
-      background-color: lightskyblue;
-      display: block;
-      font-weight: bolder;
-      text-align: center;
-      padding: 4px;
-      position: absolute;
-
-    }
-    .course_intro_div{
-      border-style: dashed;
-      border-color:lightskyblue;
-      padding: 7px;
-      margin-bottom: 4px;
-      background: #ffffff;
-      border-radius: 10px;
-    }
-
-    .course_title {
-      position: relative;
-    }
-
-
-
-    .course_img{
-      margin-bottom: 7px;
-    }
-    .btn-primary{
-      background-color: #ff7518;
-    }
-
-
-    <!-- -->
-    footer{
-      height: 150px;
-      background-color: #6a737b;
-    }
-
-
-    @media (max-width: 800px) {
-      .sideBar{
-        display: none;
-      }
-      .table{
-        width: 100%;
-      }
-
     }
 
   </style>
@@ -195,209 +44,459 @@
 </head>
 
 <body>
-<div class="headerGroup" style=" position: fixed; z-index: 999">
-
-  <div class="header" style="width: 100vw">
-    <div class="banner" style="height: 170px;width: 100vw; background:white; display: flex; flex-direction: column; align-items: center; justify-content:center; ">
-
-      <h2>112-3</h2>
-      <div><h1 style="font-weight: bolder">資訊工程學士後專班</h1></div>
+<div class="headerGroup">
+  <div id="carouselExampleIndicators" class="carousel slide ">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-  </div>
-  <div class="navigator">
-    <a >首頁</a>
-    <a>最新新聞</a>
-    <a  >My FCU</a>
+    <div class="carousel-inner">
+      <div class="carousel-item active" >
+        <img src="https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block  w-100 crou-img" alt="img1" >
+        <div class="carousel-caption d-flex  flex-column justify-content-center align-items-center">
+          <h2 style="background: linear-gradient(90deg,transparent,black,transparent)">First slide label</h2>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100 crou-img" alt="img2">
+        <div class="carousel-caption d-flex  flex-column justify-content-center align-items-center">
+          <h2 style="background: linear-gradient(45deg,transparent,black,transparent)" >Second slide label</h2>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.pexels.com/photos/2341830/pexels-photo-2341830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100 crou-img" alt="img3">
+        <div class="carousel-caption d-flex  flex-column justify-content-center align-items-center">
+          <h2 style="background: linear-gradient(45deg,transparent,black,transparent)">Third slide label</h2>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 </div>
-<!-- -->
-<div style="height: 210px"></div>
 
-<div class="content" id="sideBarL" >
-  <div class="sideBar">
-    <div class="card"  >
-      <img src="https://www.iecs.fcu.edu.tw/media/img/teacher/avatar/IMG_2906.png" class="card-img-top" alt="薛念林老師">
-      <div class="card-body">
-        <h5 class="card-title">薛念林老師</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+<!-- -->
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid bg-dark d-flex ">
+    <a class="navbar-brand text-white" href="https://myfcu.fcu.edu.tw/main/InfoMyFcuLogin.aspx#!/subs/SS920000">My FCU</a>
+  </div>
+</nav>
+<!-- -->
+<div class="container-fluid" >
+  <div class="row justify-content-center">
+    <div class="col-md-2 mt-4 mb-4 mx-1">
+      <div class="card" >
+        <img class="card-img-top" src="https://www.iecs.fcu.edu.tw/media/img/teacher/avatar/IMG_2906.png"  alt="薛念林老師" >
+        <div class="card-body">
+          <h4 class="card-title">薛念林老師</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#profileModal6">See Profile</a>
+        </div>
       </div>
     </div>
-    <div class="card"  >
-      <img src="https://www.iecs.fcu.edu.tw/media/img/teacher/avatar/IeonLee800X800.png" class="card-img-top" alt="李俊宏老師">
-      <div class="card-body">
-        <h5 class="card-title">李俊宏老師</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary"  >Go somewhere</a>
+    <div class="col-md-2 mt-4 mb-4  mx-1" >
+      <div class="card">
+        <img src="https://www.iecs.fcu.edu.tw/media/img/teacher/avatar/IeonLee800X800.png" class="card-img-top" alt="李俊宏老師">
+        <div class="card-body">
+          <h4 class="card-title">李俊宏老師</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#profileModal5" >See Profile</a>
+        </div>
       </div>
     </div>
-    <div class="card"  >
-      <img src="https://www.iecs.fcu.edu.tw/media/img/teacher/avatar/pic_02423.jpg" class="card-img-top" alt="陳錫民老師">
-      <div class="card-body">
-        <h5 class="card-title">陳錫民老師</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary"  >Go somewhere</a>
+    <div class="col-md-2 mt-4 mb-4  mx-1">
+      <div class="card">
+        <img src="https://www.iecs.fcu.edu.tw/media/img/teacher/avatar/pic_02423.jpg" class="card-img-top" alt="李俊宏老師">
+        <div class="card-body">
+          <h5 class="card-title">陳錫民老師</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#profileModal4" >See Profile</a>
+        </div>
       </div>
     </div>
-    <div class="card"  >
-      <img src="https://www.iecs.fcu.edu.tw/media/img/teacher/avatar/CCC2_square.jpg" class="card-img-top" alt="張真誠老師">
-      <div class="card-body">
-        <h5 class="card-title">張真誠老師</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="col-md-2 mt-4 mb-4  mx-1">
+      <div class="card  "  >
+        <img src="https://www.iecs.fcu.edu.tw/media/img/teacher/avatar/CCC2_square.jpg" class="card-img-top" alt="張真誠老師">
+        <div class="card-body">
+          <h5 class="card-title">張真誠老師</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#profileModal3">See Profile</a>
+        </div>
       </div>
     </div>
-    <div class="card"  >
-      <img src="https://www.iecs.fcu.edu.tw/media/img/teacher/avatar/%E7%89%B9%E7%B4%84%E8%AC%9B%E5%BA%A7-%E6%A1%91%E6%85%A7%E6%95%8F-%E6%AD%A3%E6%96%B9%E5%BD%A2.jpg" class="card-img-top" alt="桑慧敏老師">
-      <div class="card-body">
-        <h5 class="card-title">桑慧敏老師</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="col-md-2 mt-4 mb-4  mx-1">
+      <div class="card " >
+        <img src="https://www.iecs.fcu.edu.tw/media/img/teacher/avatar/%E7%89%B9%E7%B4%84%E8%AC%9B%E5%BA%A7-%E6%A1%91%E6%85%A7%E6%95%8F-%E6%AD%A3%E6%96%B9%E5%BD%A2.jpg" class="card-img-top" alt="桑慧敏老師">
+        <div class="card-body">
+          <h5 class="card-title">桑慧敏老師</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#profileModal2">See Profile</a>
+        </div>
       </div>
     </div>
-    <div class="card" >
-      <img src="https://picsum.photos/300" class="card-img-top" alt="賴璉錡老師">
-      <div class="card-body">
-        <h5 class="card-title">賴璉錡老師</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="col-md-2 mt-4 mb-4  mx-1">
+      <div class="card  " >
+        <img src="https://picsum.photos/300" class="card-img-top" alt="賴璉錡老師">
+        <div class="card-body">
+          <h5 class="card-title">賴璉錡老師</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#profileModal1">See Profile</a>
+        </div>
       </div>
     </div>
   </div>
-
-
-
-
-  <div class="table">
-    <div class="tableTitle">
-      <h1>Course Table</h1>
-      <h2 id="title">我的課表</h2>
+  </div>
+<!--Modal-->
+<div class="modal fade" id="profileModal1" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="profileModalLabel">賴璉錡老師</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur cumque ea error iure modi necessitatibus numquam porro repellendus voluptatem! Blanditiis, cumque et labore odit pariatur provident quis repudiandae voluptates?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
     </div>
-    <table>
+  </div>
+</div>
+<div class="modal fade" id="profileModal2" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="profileModalLabe2">桑慧敏老師</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta enim error exercitationem? Consequatur corporis doloribus eaque et hic in minus nam neque, provident quaerat quasi qui quia reiciendis soluta voluptas!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="profileModal3" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="profileModalLabel3">張真誠老師</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta enim error exercitationem? Consequatur corporis doloribus eaque et hic in minus nam neque, provident quaerat quasi qui quia reiciendis soluta voluptas!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="profileModal4" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="profileModalLabel4">陳錫民老師</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta enim error exercitationem? Consequatur corporis doloribus eaque et hic in minus nam neque, provident quaerat quasi qui quia reiciendis soluta voluptas!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="profileModal5" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="profileModalLabel5">李俊宏老師</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta enim error exercitationem? Consequatur corporis doloribus eaque et hic in minus nam neque, provident quaerat quasi qui quia reiciendis soluta voluptas!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="profileModal6" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="profileModalLabel6">薛念林老師</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta enim error exercitationem? Consequatur corporis doloribus eaque et hic in minus nam neque, provident quaerat quasi qui quia reiciendis soluta voluptas!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs d-flex justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link " data-bs-toggle="tab" href="#table1">113-1</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" data-bs-toggle="tab" href="#table2">113-2</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#table1">113-3</a>
+  </li>
+</ul>
+
+
+
+<div class="tab-content">
+  <div class="tab-pane container fade" id="table1">
+    <h2 class="text-center mt-3 mb-3">113-1 Course Table</h2>
+    <table class="table">
+      <thead>
+      <tr >
+        <th scope="col">  </th>
+        <th scope="col">Mon</th>
+        <th scope="col">Tues</th>
+        <th scope="col">Wed</th>
+        <th scope="col">Thur</th>
+      </tr>
+      </thead>
+      <tbody>
       <tr>
-        <th>-</th>
-        <th>Monday</th>
-        <th>Tuesday</th>
-        <th>Wednesday</th>
-        <th>Thursday</th>
+        <th scope="row">9:10~12:00</th>
+        <td></td>
+        <td>程式設計</td>
+        <td>計算機概論</td>
+        <td>軟體工程概論</td>
       </tr>
       <tr>
-        <th>9:10-12:00</th>
-        <td><span onclick="course_intro('App')"> App 開發 </span>
-          <span class="teacher">賴璉錡</span>
-        </td>
-        <td>資料結構與演算法; <span class="teacher">李俊宏</span></td>
-        <td>App 開發; <span class="teacher">賴璉錡</span></td>
-        <td>資料庫與後端; <span class="teacher">陳錫民</span></td>
+        <th scope="row">13:00~16:00</th>
+        <td>人工智慧概論</td>
+        <td>Web程式設計</td>
+        <td>資訊安全概論</td>
+        <td>程式設計</td>
       </tr>
-      <tr>
-        <th>1:10-4:00</th>
-        <td>資料結構與演算法; <span class="teacher">李俊宏</span></td>
-        <td>進階網頁設計; <span class="teacher">薛念林</span></td>
-        <td>資料庫與後端; <span class="teacher">陳錫民</span></td>
-        <td>進階網頁設計; <span class="teacher">薛念林</span></td>
-      </tr>
+      </tbody>
     </table>
   </div>
 
+  <div class="tab-pane container fade show active" id="table2">
+    <h2 class="text-center mt-3 mb-3">113-2 Course Table</h2>
+    <table class="table">
+      <thead>
+      <tr >
+        <th scope="col">  </th>
+        <th scope="col">Mon</th>
+        <th scope="col">Tues</th>
+        <th scope="col">Wed</th>
+        <th scope="col">Thur</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">9:10~12:00</th>
+        <td>App開發<span class="teacher">賴璉錡</span></td>
+        <td>資料結構與演算法<span class="teacher">李俊宏</span></td>
+        <td>資料庫與後端<span class="teacher">陳錫民</span></td>
+        <td>進階Web程式設計<span class="teacher">薛念林</span></td>
+      </tr>
+      <tr>
+        <th scope="row">13:00~16:00</th>
+        <td>資料結構與演算法<span class="teacher">李俊宏</span></td>
+        <td>進階Web程式設計<span class="teacher">薛念林</span></td>
+        <td>App開發<span class="teacher">賴璉錡</span></td>
+        <td>資料庫與後端<span class="teacher">陳錫民</span></td>
+      </tr>
+      </tbody>
+    </table>
 
-  <!-- -->
-  <div class="sideBar" id="sideBarR">
-    <div class='course_intro_div'>
-      <h2 class='course_title'>App 設計</h2>
-      <div class="course_img">
-        <img src="https://picsum.photos/200?random=1" alt="">
-      </div>
-      <div class="course_desc">
-        <p class=>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut non sed reiciendis natus accusantium
-          voluptatum amet ipsam aliquid reprehenderit nulla! Omnis, libero. Harum repellendus voluptas est,
-          eveniet autem amet at.</p>
-
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quidem optio, facilis natus obcaecati
-          veniam porro. Eum totam, vitae maxime nostrum recusandae ipsum quis consectetur. Possimus praesentium
-          deleniti molestias illo.</p>
-      </div>
-      <div class="course_grading">
-        <ul>
-          <li>平時：40%</li>
-          <li>期中考：30%</li>
-          <li>期末考：30%</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class='course_intro_div'>
-      <h2 class='course_title'>資料結構與演算法</h2>
-      <div class="course_img">
-        <img src="https://picsum.photos/200?random=2" alt="">
-      </div>
-      <div class="course_desc">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut non sed reiciendis natus accusantium
-          voluptatum amet ipsam aliquid reprehenderit nulla! Omnis, libero. Harum repellendus voluptas est,
-          eveniet autem amet at.</p>
-
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quidem optio, facilis natus obcaecati
-          veniam porro. Eum totam, vitae maxime nostrum recusandae ipsum quis consectetur. Possimus praesentium
-          deleniti molestias illo.</p>
-      </div>
-      <div class="course_grading">
-        <ul>
-          <li>平時：40%</li>
-          <li>期中考：30%</li>
-          <li>期末考：30%</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class='course_intro_div'>
-      <h2 class='course_title'>資料庫與後端</h2>
-      <div class="course_img">
-        <img src="https://picsum.photos/200?random=3" alt="">
-      </div>
-      <div class="course_desc">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut non sed reiciendis natus accusantium
-          voluptatum amet ipsam aliquid reprehenderit nulla! Omnis, libero. Harum repellendus voluptas est,
-          eveniet autem amet at.</p>
-
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quidem optio, facilis natus obcaecati
-          veniam porro. Eum totam, vitae maxime nostrum recusandae ipsum quis consectetur. Possimus praesentium
-          deleniti molestias illo.</p>
-      </div>
-      <div class="course_grading">
-        <ul>
-          <li>平時：40%</li>
-          <li>期中考：30%</li>
-          <li>期末考：30%</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class='course_intro_div'>
-      <h2 class='course_title'>進階網頁設計</h2>
-      <div class="course_img">
-        <img src="https://picsum.photos/200?random=4" alt="">
-      </div>
-      <div class="course_desc">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut non sed reiciendis natus accusantium
-          voluptatum amet ipsam aliquid reprehenderit nulla! Omnis, libero. Harum repellendus voluptas est,
-          eveniet autem amet at.</p>
-
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quidem optio, facilis natus obcaecati
-          veniam porro. Eum totam, vitae maxime nostrum recusandae ipsum quis consectetur. Possimus praesentium
-          deleniti molestias illo.</p>
-      </div>
-      <div class="course_grading">
-        <ul>
-          <li>平時：40%</li>
-          <li>期中考：30%</li>
-          <li>期末考：30%</li>
-        </ul>
-      </div>
-    </div>
   </div>
 </div>
 
-<footer style="color:white;font-weight: bolder; font-size: 60px; text-align: center">腳註</footer>
+
+  <!-- Course introduction -->
+<div class="course container mt-3">
+  <h2 class="text-center mt-3 mb-3">課程介紹</h2>
+
+  <div class="accordion" id="course-intro">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          APP設計
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <h2 class='course_title'>App 設計</h2>
+          <div class="course_img">
+            <img src="https://picsum.photos/200?random=5" alt="">
+          </div>
+          <div class="course_desc">
+            <p class=>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut non sed reiciendis natus accusantium
+              voluptatum amet ipsam aliquid reprehenderit nulla! Omnis, libero. Harum repellendus voluptas est,
+              eveniet autem amet at.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quidem optio, facilis natus obcaecati
+              veniam porro. Eum totam, vitae maxime nostrum recusandae ipsum quis consectetur. Possimus praesentium
+              deleniti molestias illo.</p>
+            <div class="course_grading">
+              <ul>
+                <li>平時：40%</li>
+                <li>期中考：30%</li>
+                <li>期末考：30%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          資料結構與演算法
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <h2 class='course_title'>資料結構與演算法</h2>
+          <div class="course_img">
+            <img src="https://picsum.photos/200" alt="">
+          </div>
+          <div class="course_desc">
+            <p class=>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut non sed reiciendis natus accusantium
+              voluptatum amet ipsam aliquid reprehenderit nulla! Omnis, libero. Harum repellendus voluptas est,
+              eveniet autem amet at.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quidem optio, facilis natus obcaecati
+              veniam porro. Eum totam, vitae maxime nostrum recusandae ipsum quis consectetur. Possimus praesentium
+              deleniti molestias illo.</p>
+            <div class="course_grading">
+              <ul>
+                <li>平時：40%</li>
+                <li>期中考：30%</li>
+                <li>期末考：30%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div >
+
+    <div class ="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          資料庫與後端
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <h2 class='course_title'>資料庫與後端</h2>
+          <div class="course_img">
+            <img src="https://picsum.photos/200?random=1" alt="">
+          </div>
+          <div class="course_desc">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut non sed reiciendis natus accusantium
+              voluptatum amet ipsam aliquid reprehenderit nulla! Omnis, libero. Harum repellendus voluptas est,
+              eveniet autem amet at.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quidem optio, facilis natus obcaecati
+              veniam porro. Eum totam, vitae maxime nostrum recusandae ipsum quis consectetur. Possimus praesentium
+              deleniti molestias illo.</p>
+            <div class="course_grading">
+              <ul>
+                <li>平時：40%</li>
+                <li>期中考：30%</li>
+                <li>期末考：30%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class ="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          進階網頁設計
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <h2 class='course_title'>進階網頁設計</h2>
+          <div class="course_img">
+            <img src="https://picsum.photos/200" alt="">
+          </div>
+          <div class="course_desc">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut non sed reiciendis natus accusantium
+              voluptatum amet ipsam aliquid reprehenderit nulla! Omnis, libero. Harum repellendus voluptas est,
+              eveniet autem amet at.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quidem optio, facilis natus obcaecati
+              veniam porro. Eum totam, vitae maxime nostrum recusandae ipsum quis consectetur. Possimus praesentium
+              deleniti molestias illo.</p>
+            <div class="course_grading">
+              <ul>
+                <li>平時：40%</li>
+                <li>期中考：30%</li>
+                <li>期末考：30%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="container-fluid d-flex justify-content-around mt-5 bg-secondary p-3 text-center text-white">
+  <div>
+    © 2024 Copyright: <a class="text-dark" href="https://www.iecs.fcu.edu.tw/"> IECS at FCU</a>
+  </div>
+  <div>
+    <i class="bi bi-arrow-right-circle"></i>: iecs@fcu.edu.tw
+  </div>
+  <div>
+    <a class="text-dark" href="https://www.iecs.fcu.edu.tw/nlhsueh"><i class="bi bi-globe2"></i></a>
+    <a class="text-dark" href="https://www.iecs.fcu.edu.tw/nlhsueh"><i class="bi bi-facebook"></i></a>
+    <a class="text-dark" href="https://www.iecs.fcu.edu.tw/nlhsueh"><i class="bi bi-instagram"></i></a>
+    <a class="text-dark" href="https://www.iecs.fcu.edu.tw/nlhsueh"><i class="bi bi-google"></i></a>
+  </div>
+</div>
 
 
 </body>
